@@ -14,7 +14,7 @@ namespace DevToPostsScheduler.Func
 
             SchedulerRunner.Worker worker = new SchedulerRunner.Worker();
 
-            await worker.Run("tWc86Z4x5M9okdisNuFpnee3");
+            await worker.Run("");
         }
     }
 }
