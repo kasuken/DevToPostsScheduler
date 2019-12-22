@@ -7,7 +7,6 @@ namespace DevToPostsScheduler.Data
 {
     public interface IDataService
     {
-
         Task<UnpublishedArticle> LoadPublishedArticle(string accessToken, string id);
 
         Task<List<UnpublishedArticle>> LoadDraftArticles(string accessToken);

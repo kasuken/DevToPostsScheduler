@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29509.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevToPostsScheduler.Func", "DevToPostsScheduler.Func\DevToPostsScheduler.Func.csproj", "{F5ED9CBB-2431-44E1-8C31-82C897C63A94}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevToPostsScheduler.SchedulerRunner", "DevToPostsScheduler.SchedulerRunner\DevToPostsScheduler.SchedulerRunner.csproj", "{3AD92FA9-08ED-477A-BE3E-857E419F6D79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevToPostsScheduler.Models", "DevToPostsScheduler.Models\DevToPostsScheduler.Models.csproj", "{ED561F46-0591-4A83-B95D-3564E8EAD9FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevToPostsScheduler.Models", "DevToPostsScheduler.Models\DevToPostsScheduler.Models.csproj", "{ED561F46-0591-4A83-B95D-3564E8EAD9FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevToPostsScheduler.Data", "DevToPostsScheduler.Data\DevToPostsScheduler.Data.csproj", "{D52FF62F-7873-4A8E-9495-175EF955DC8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevToPostsScheduler.Data", "DevToPostsScheduler.Data\DevToPostsScheduler.Data.csproj", "{D52FF62F-7873-4A8E-9495-175EF955DC8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevToPostsScheduler.Func", "DevToPostsScheduler.Func\DevToPostsScheduler.Func.csproj", "{B2A78C55-94D0-4502-ACE7-497A47B0BB77}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F5ED9CBB-2431-44E1-8C31-82C897C63A94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F5ED9CBB-2431-44E1-8C31-82C897C63A94}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F5ED9CBB-2431-44E1-8C31-82C897C63A94}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F5ED9CBB-2431-44E1-8C31-82C897C63A94}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3AD92FA9-08ED-477A-BE3E-857E419F6D79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3AD92FA9-08ED-477A-BE3E-857E419F6D79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AD92FA9-08ED-477A-BE3E-857E419F6D79}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +29,10 @@ Global
 		{D52FF62F-7873-4A8E-9495-175EF955DC8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D52FF62F-7873-4A8E-9495-175EF955DC8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D52FF62F-7873-4A8E-9495-175EF955DC8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2A78C55-94D0-4502-ACE7-497A47B0BB77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2A78C55-94D0-4502-ACE7-497A47B0BB77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2A78C55-94D0-4502-ACE7-497A47B0BB77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2A78C55-94D0-4502-ACE7-497A47B0BB77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

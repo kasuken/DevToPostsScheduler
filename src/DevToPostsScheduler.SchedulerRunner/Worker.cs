@@ -10,6 +10,8 @@ namespace DevToPostsScheduler.SchedulerRunner
 {
     public class Worker
     {
+        public const string PublishDateRegEx = "##PublishedDate:(.*)##";
+
         public async Task Run(string token)
         {
             var dataService = new DevToAPIDataService();
@@ -30,7 +32,7 @@ namespace DevToPostsScheduler.SchedulerRunner
 
                         item.BodyMarkdown = RemovePublishedDateInText(article.BodyMarkdown);
 
-                        //await dataService.PublishArticle(token, item);
+                        await dataService.PublishArticle(token, item);
                     }
                 }
             }
@@ -38,19 +40,19 @@ namespace DevToPostsScheduler.SchedulerRunner
 
         private string FindPublishedDateInText(string markdown)
         {
-            var regex = new Regex("##PublishedDate(.*)##");
-            var v = regex.Match(markdown);
-            string s = v.Groups[1].ToString();
+            var regex = new Regex(PublishDateRegEx);
+            var m = regex.Match(markdown);
+            string date = m.Groups[1].ToString();
 
-            return s;
+            return date;
         }
 
         private string RemovePublishedDateInText(string markdown)
         {
-            var regex = new Regex("##PublishedDate(.*)##");
-            var v = regex.Match(markdown);
+            var regex = new Regex(PublishDateRegEx);
+            var m = regex.Match(markdown);
 
-            markdown = markdown.Replace(v.Value, "");
+            markdown = markdown.Replace(m.Value, "");
 
             return markdown;
         }
