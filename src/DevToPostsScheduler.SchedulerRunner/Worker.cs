@@ -10,6 +10,7 @@ namespace DevToPostsScheduler.SchedulerRunner
 {
     public class Worker
     {
+        //Example: ##PublishedOn:2019-12-21 08:00AM##
         public const string PublishDateRegEx = "##PublishOn:(.*)##";
 
         public async Task Run(string token)
