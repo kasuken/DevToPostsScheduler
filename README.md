@@ -1,4 +1,3 @@
-
 # Dev.to posts scheduler
 
 ![](https://countrush-prod.azurewebsites.net/l/badge/?repository=kasuken.devtopostsscheduler)
