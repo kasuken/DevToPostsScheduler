@@ -328,3 +328,8 @@ ASALocalRun/
 
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
+src/DevToPostsScheduler.Func/Properties/serviceDependencies.DevToPostsScheduler-prod - Zip Deploy.json
+src/DevToPostsScheduler.Func/Properties/ServiceDependencies/DevToPostsScheduler-prod - Zip Deploy/appInsights1.arm.json
+src/DevToPostsScheduler.Func/Properties/ServiceDependencies/DevToPostsScheduler-prod - Zip Deploy/storage1.arm.json
+src/DevToPostsScheduler.Func/Properties/serviceDependencies.local.json
+src/DevToPostsScheduler.Func/Properties/serviceDependencies.json
