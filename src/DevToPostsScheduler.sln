@@ -1,15 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29509.3
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevToPostsScheduler.SchedulerRunner", "DevToPostsScheduler.SchedulerRunner\DevToPostsScheduler.SchedulerRunner.csproj", "{3AD92FA9-08ED-477A-BE3E-857E419F6D79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevToPostsScheduler.Func", "DevToPostsScheduler.Func\DevToPostsScheduler.Func.csproj", "{FE67AB19-09BE-4B87-8B80-17565393C823}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevToPostsScheduler.Models", "DevToPostsScheduler.Models\DevToPostsScheduler.Models.csproj", "{ED561F46-0591-4A83-B95D-3564E8EAD9FD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevToPostsScheduler.Models", "DevToPostsScheduler.Models\DevToPostsScheduler.Models.csproj", "{0FFB21DF-B7D5-4E25-A881-D4BF704FCE41}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevToPostsScheduler.Data", "DevToPostsScheduler.Data\DevToPostsScheduler.Data.csproj", "{D52FF62F-7873-4A8E-9495-175EF955DC8B}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevToPostsScheduler.Func", "DevToPostsScheduler.Func\DevToPostsScheduler.Func.csproj", "{B2A78C55-94D0-4502-ACE7-497A47B0BB77}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevToPostsScheduler.Data", "DevToPostsScheduler.Data\DevToPostsScheduler.Data.csproj", "{B5B9383E-E596-4F15-8802-FFC47FDCFFA1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,27 +15,23 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3AD92FA9-08ED-477A-BE3E-857E419F6D79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3AD92FA9-08ED-477A-BE3E-857E419F6D79}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3AD92FA9-08ED-477A-BE3E-857E419F6D79}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3AD92FA9-08ED-477A-BE3E-857E419F6D79}.Release|Any CPU.Build.0 = Release|Any CPU
-		{ED561F46-0591-4A83-B95D-3564E8EAD9FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ED561F46-0591-4A83-B95D-3564E8EAD9FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ED561F46-0591-4A83-B95D-3564E8EAD9FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ED561F46-0591-4A83-B95D-3564E8EAD9FD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D52FF62F-7873-4A8E-9495-175EF955DC8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D52FF62F-7873-4A8E-9495-175EF955DC8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D52FF62F-7873-4A8E-9495-175EF955DC8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D52FF62F-7873-4A8E-9495-175EF955DC8B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B2A78C55-94D0-4502-ACE7-497A47B0BB77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B2A78C55-94D0-4502-ACE7-497A47B0BB77}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B2A78C55-94D0-4502-ACE7-497A47B0BB77}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B2A78C55-94D0-4502-ACE7-497A47B0BB77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE67AB19-09BE-4B87-8B80-17565393C823}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE67AB19-09BE-4B87-8B80-17565393C823}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE67AB19-09BE-4B87-8B80-17565393C823}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE67AB19-09BE-4B87-8B80-17565393C823}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FFB21DF-B7D5-4E25-A881-D4BF704FCE41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FFB21DF-B7D5-4E25-A881-D4BF704FCE41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FFB21DF-B7D5-4E25-A881-D4BF704FCE41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FFB21DF-B7D5-4E25-A881-D4BF704FCE41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5B9383E-E596-4F15-8802-FFC47FDCFFA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5B9383E-E596-4F15-8802-FFC47FDCFFA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5B9383E-E596-4F15-8802-FFC47FDCFFA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5B9383E-E596-4F15-8802-FFC47FDCFFA1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {8F568FE5-34CF-4FCB-BD5E-04AD43B13667}
+		SolutionGuid = {1910BB2C-F6BE-452B-B6A0-9712683FAEA2}
 	EndGlobalSection
 EndGlobal
