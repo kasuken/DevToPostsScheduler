@@ -39,11 +39,17 @@ namespace DevToPostsScheduler.Data
         {
             var client = new HttpClient();
 
+            var articleContainer  = new ArticleContainer();
+            var articleToPublish = new Article();
+            articleToPublish.Published = true;
+            articleToPublish.BodyMarkdown = article.BodyMarkdown;
+
+            articleContainer.Article = articleToPublish;
+
             client.DefaultRequestHeaders.Add("api-key", accessToken);
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-            article.Published = true;
-            var content = new StringContent(JsonConvert.SerializeObject(article), Encoding.UTF8, "application/json");
+            var content = new StringContent(JsonConvert.SerializeObject(articleContainer), Encoding.UTF8, "application/json");
 
             var response = await client.PutAsync($"https://dev.to/api/articles/{article.Id}", content);
 
