@@ -16,6 +16,7 @@ namespace DevToPostsScheduler.Data
             var client = new HttpClient();
 
             client.DefaultRequestHeaders.Add("api-key", accessToken);
+            client.DefaultRequestHeaders.Add("user-agent", "DevToPostsScheduler");
 
             var response = await client.GetStringAsync("https://dev.to/api/articles/me/unpublished");
             var articles = JsonConvert.DeserializeObject<List<UnpublishedArticle>>(response);
@@ -28,6 +29,7 @@ namespace DevToPostsScheduler.Data
             var client = new HttpClient();
 
             client.DefaultRequestHeaders.Add("api-key", accessToken);
+            client.DefaultRequestHeaders.Add("user-agent", "DevToPostsScheduler");
 
             var response = await client.GetStringAsync($"https://dev.to/api/articles/{id}");
             var article = JsonConvert.DeserializeObject<UnpublishedArticle>(response);
@@ -40,6 +42,7 @@ namespace DevToPostsScheduler.Data
             var client = new HttpClient();
 
             client.DefaultRequestHeaders.Add("api-key", accessToken);
+            client.DefaultRequestHeaders.Add("user-agent", "DevToPostsScheduler");
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
             article.Published = true;
