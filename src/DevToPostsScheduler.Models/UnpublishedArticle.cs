@@ -5,13 +5,7 @@ using System.Collections.Generic;
 namespace DevToPostsScheduler.Models
 {
     public class UnpublishedArticle
-    {
-        [JsonProperty("article")]
-        public Article Article { get; set; }
-    }
-
-    public class Article
-    {
+{
         [JsonProperty("type_of")]
         public string TypeOf { get; set; }
 

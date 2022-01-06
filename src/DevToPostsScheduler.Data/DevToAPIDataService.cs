@@ -45,11 +45,16 @@ namespace DevToPostsScheduler.Data
             client.DefaultRequestHeaders.Add("user-agent", "DevToPostsScheduler");
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-            article.Article.Published = true;
-            var content = new StringContent(JsonConvert.SerializeObject(article), Encoding.UTF8, "application/json");
+            article.Published = true;
+
+            //TODO improve this part
+            var articleString = JsonConvert.SerializeObject(article);
+            articleString = "{ \"article\" : " + articleString + "}";
+
+            var content = new StringContent(articleString, Encoding.UTF8, "application/json");
             content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
 
-            var response = await client.PutAsync($"https://dev.to/api/articles/{article.Article.Id}", content);
+            var response = await client.PutAsync($"https://dev.to/api/articles/{article.Id}", content);
 
             return response.IsSuccessStatusCode;
         }
