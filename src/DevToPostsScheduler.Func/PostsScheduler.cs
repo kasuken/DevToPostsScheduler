@@ -33,7 +33,7 @@ namespace DevToPostsScheduler.Func
 
             foreach (var article in articles)
             {
-                var pubDateString = FindPublishedDateInText(article.BodyMarkdown);
+                var pubDateString = FindPublishedDateInText(article.Article.BodyMarkdown);
 
                 if (pubDateString is { Length: > 0})
                 {
@@ -41,9 +41,9 @@ namespace DevToPostsScheduler.Func
 
                     if (pubDate < DateTime.Now)
                     {
-                        var item = articles.Where(c => c.Id == article.Id).FirstOrDefault();
+                        var item = articles.Where(c => c.Article.Id == article.Article.Id).FirstOrDefault();
 
-                        item.BodyMarkdown = RemovePublishedDateInText(article.BodyMarkdown);
+                        item.Article.BodyMarkdown = RemovePublishedDateInText(article.Article.BodyMarkdown);
 
                         await dataService.PublishArticle(apiKey, item);
                     }

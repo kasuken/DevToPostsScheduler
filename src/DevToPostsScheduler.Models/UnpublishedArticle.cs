@@ -6,6 +6,12 @@ namespace DevToPostsScheduler.Models
 {
     public class UnpublishedArticle
     {
+        [JsonProperty("article")]
+        public Article Article { get; set; }
+    }
+
+    public class Article
+    {
         [JsonProperty("type_of")]
         public string TypeOf { get; set; }
 
@@ -47,6 +53,9 @@ namespace DevToPostsScheduler.Models
 
         [JsonProperty("comments_count")]
         public long CommentsCount { get; set; }
+
+        [JsonProperty("reading_time_minutes")]
+        public long ReadingTimeMinutes { get; set; }
 
         [JsonProperty("positive_reactions_count")]
         public long PositiveReactionsCount { get; set; }
