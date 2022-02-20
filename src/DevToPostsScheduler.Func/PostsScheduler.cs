@@ -12,8 +12,8 @@ namespace DevToPostsScheduler.Func
     {
         private readonly ILogger _logger;
 
-        //Example: ##ToPublishOn:2019-12-21 08:00AM##
-        private const string PublishDateRegEx = "##ToPublishOn:(.*)##";
+        //Example: ##PublishAfter:2019-12-21 08:00AM##
+        private const string PublishDateRegEx = "##PublishAfter:(.*)##";
 
         public PostsScheduler(ILoggerFactory loggerFactory)
         {

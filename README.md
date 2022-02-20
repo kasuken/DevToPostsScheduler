@@ -27,7 +27,7 @@ You'll see the newly generated key in the same view
 ## Hot to use
 After the deployment of the Azure Function, you can just add the markdown below in your article and save it as "Draft":
 
-##ToPublishOn:2021-12-02 08:00AM##
+##PublishAfter:2021-12-02 08:00AM##
 
 ## Contributing
 
